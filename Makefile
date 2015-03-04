@@ -3,4 +3,4 @@ build:
 	clang -c use_foo.c -o use_foo.o &&\
 	clang -lc -lm -lpthread -lSystem use_foo.o foo.a -o use_foo
 clean:
-	@rm -rf foo.a use_foo.o use_foo
+	@rm -f foo.a use_foo.o use_foo
