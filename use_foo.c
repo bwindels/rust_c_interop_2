@@ -1,9 +1,10 @@
 #include <stdio.h>
 
-void foo();
+unsigned int foo();
 
 int main() {
 	printf("hello from c\n");
-	foo();
+	unsigned int value = foo();
+	printf("foo returned %d\n", value);
 	return 0;
 }
